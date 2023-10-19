@@ -195,10 +195,47 @@ h3{
 
 }
 /*----- Flexibility ------*/
-@media(max-width: 700px){
-    .other{
-        flex-direction: column;
+@media (max-width: 700px) {
+    .h_ {
+        min-height: 50vh;
+    }
+    
+    .t_box {
+        width: 90%;
+        font-size: 12px;
+    }
+    
+    .t_box h1 {
+        font-size: 30px;
+    }
+    
+    .t_box p {
+        font-size: 12px;
+    }
+    
+    .psu_button {
+        padding: 10px 20px;
     }
 
+    .about h1 {
+        font-size: 24px;
+    }
+    
+    .col {
+        flex-basis: 100%;
+    }
+
+    .need h3 {
+        font-size: 24px;
+    }
+    
+    .col2 {
+        flex-basis: 100%;
+    }
+    
+    p {
+        font-size: 14px;
+    }
 }
+
 /*----- Akoy tinapos na ------*/

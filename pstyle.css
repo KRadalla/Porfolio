@@ -208,9 +208,44 @@ h3{
 
 }
 /*----- Flexibility ------*/
-@media(max-width: 700px){
-    .game{
+@media (max-width: 700px) {
+    .t_box {
+        padding: 10px;
+    }
+
+    .t_box h1 {
+        font-size: 40px;
+    }
+
+    .t_box p {
+        font-size: 12px;
+    }
+
+    .button_ako {
+        padding: 10px 20px;
+    }
+
+    .other {
         flex-direction: column;
     }
 
+    .col {
+        flex-basis: 100%;
+    }
+
+    .about h1 {
+        font-size: 24px;
+    }
+
+    .game {
+        flex-direction: column;
+    }
+
+    .col2 {
+        flex-basis: 100%;
+    }
+
+    p, h3 {
+        font-size: 10px;
+    }
 }

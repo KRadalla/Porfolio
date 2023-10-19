@@ -140,15 +140,41 @@ span{
 span:hover{
     color: rgb(241, 4, 4);
 }
-@media(max-width: 700px){
-    .b_port{
-        flex-direction: column;
-    }
-    .detail{
-        flex-direction: column;
-    }
-    .me{
-        flex-direction: column;
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 24px; /* Further reduce font size for smaller screens */
     }
 
+    p {
+        font-size: 16px; /* Further reduce font size for smaller screens */
+    }
+
+    nav img {
+        height: 60px; /* Reduce logo height for smaller screens */
+    }
+
+    .n_l ul li {
+        padding: 8px 6px; /* Reduce padding for smaller screens */
+    }
+
+    .detail {
+        margin-top: 5%; /* Further adjust margin for smaller screens */
+        padding: 8px; /* Further adjust padding for smaller screens */
+    }
+
+    .detail h1 {
+        font-size: 24px; /* Further reduce font size for smaller screens */
+        margin-bottom: 8px; /* Further adjust margin for smaller screens */
+    }
+
+    .detail p {
+        font-size: 14px; /* Further reduce font size for smaller screens */
+        line-height: 18px; /* Further adjust line height for smaller screens */
+    }
+
+    .detail #dl {
+        padding: 6px 12px; /* Further adjust padding for smaller screens */
+        margin: 16px 0; /* Further adjust margin for smaller screens */
+    }
 }
