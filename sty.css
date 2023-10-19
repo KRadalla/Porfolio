@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.b_port{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(3, 3, 3);
+    background-image: url(bg1.png);
+}
+nav{    /*--- Style sa navigation list ko to ----*/
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav img{    /*--- Style nung pics sa gilid ----*/
+    height: 100px;
+
+}
+/*----- Navigation list align ment ------*/
+.n_l{
+    flex: 1;
+    text-align: right;
+}
+.n_l ul li{
+    list-style: decimal;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.n_l ul li a{
+    color: rgb(253, 253, 253);
+    text-decoration: solid;
+    font-size: 20px;
+    font-family: 'Nosifer', sans-serif;
+}
+.n_l ul li a:hover{
+    color: red;
+}
+.n_l ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: maroon;
+    display: block;
+    margin: auto;
+
+}
+.n_l ul li:hover::after{
+    width: 100%;
+}
+/*----- Text box ------*/
+.log_1{
+    height: 100px;
+    width: 100px;
+}
+
+.detail{
+    margin-top: 15%;
+    padding-left: 15%;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.555);
+    background: rgba(2, 2, 2, 0.568);
+}
+
+.detail h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+.detail p{
+    color: azure;
+    line-height: 25px;
+}
+.detail #dl{
+    background: rgba(1, 175, 53, 0.548);
+    padding: 10px 20px;
+    font-weight: bold;
+    color: rgba(1, 44, 236, 0.952);
+    display: inline-block;
+    text-decoration: none;
+    margin: 30px 0;
+    border-radius: 6px;
+}
+.me{
+    width: 55%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+
+}
+
+.me img{
+    height: 100%;
+    position: absolute;
+    left: 70%;
+    bottom: 0;
+    transform: translate(-15%);
+    transition: bottom 1s, left 1s;
+
+}
+.uli{
+    visibility: hidden;
+}
+
+.me:hover .ako{
+    visibility: hidden;
+    opacity: 0;
+}
+.detail #dl:hover{
+    color: #ffffff;
+    background-color: rgb(253, 5, 5);
+}
+.me img:hover{
+    transform: scale(1.5) rotate(-25deg);
+}
+.me:hover .uli{
+    left: 45%;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1.5) rotate(-10deg);
+}
+/*----- LETTER HOVER ------*/
+span{
+    font-weight: bold;
+}
+span:hover{
+    color: rgb(241, 4, 4);
+}
+@media(max-width: 700px){
+    .b_port{
+        flex-direction: column;
+    }
+    .detail{
+        flex-direction: column;
+    }
+    .me{
+        flex-direction: column;
+    }
+
+}

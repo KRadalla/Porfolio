@@ -1,0 +1,204 @@
+*{
+    margin: 0;/*--- nagmargin pa talga ako 0 din ----*/
+    padding: 0;
+    font-family: 'Bruno Ace SC', cursive;   /*--- font lng to nakuha sa google ----*/
+
+}
+/*------ START HERE ------*/
+.h_{    /*--- Header stlye ----*/
+    min-height: 100vh;
+    width: 100%;
+    color: black;
+    background-image: url(bg1.png);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+nav{    /*--- Style sa navigation list ko to ----*/
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{    /*--- Style nung pics sa gilid ----*/
+    height: 100px;
+
+}
+/*----- Navigation list align ment ------*/
+.n_l{
+    flex: 1;
+    text-align: right;
+}
+.n_l ul li{
+    list-style: decimal;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.n_l ul li a{
+    color: yellowgreen;
+    text-decoration: solid;
+    font-size: 15px;
+}
+.n_l ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+
+}
+.n_l ul li:hover::after{
+    width: 100%;
+}
+
+/*----- Text box ------*/
+.t_box{
+    width: 90%;
+    color:rgb(224, 219, 219);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    flex-basis: 31%;
+    background: rgba(0, 0, 0, 0.637);
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.t_box h1{
+    font-size: 52px;
+}
+.t_box p{
+    margin: 10px 0 40 px;
+    font-size: 14px;
+    color: rgba(247, 243, 243, 0.822);
+
+}
+/*----- Enroll now button ------*/
+.psu_button{
+    display: inline-block;
+    color: rgba(4, 85, 248, 0.836);
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 13px 32px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.psu_button:hover{
+    border: 1px solid yellow;
+    background: yellow;
+    transition: 2s;
+}
+
+/*----- About CPE ------*/
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+    min-height: 100vh;
+    width: 100%;
+    color: black;
+    background-image: url(WEBSITE/Image/Hello.gif);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    
+}
+/*----- Video presentation ------*/
+video{
+    cursor: pointer;
+    padding: 10px;
+    
+}
+.other{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 31%;
+    background: rgba(1, 39, 18, 0.603);
+    border-radius: 5px;
+    margin-top: 15%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+/*----- Flexibility nung sizes ------*/
+@media(max-width: 700px){
+    .other{
+        flex-direction: column;
+    }
+    .col{
+        flex-direction: column;
+    }
+
+}
+
+/*----- Materials ------*/
+.need{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+    min-height: 100vh;
+    width: 100%;
+    color: black;
+    background-image: url(WEBSITE/Image/Hello.gif);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.col2{
+    flex-basis: 31%;
+    background: rgba(1, 39, 18, 0.603);
+    border-radius: 5px;
+    margin-top: 15%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+
+
+}
+p{
+    color: yellow;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: white;
+
+}
+/*----- Flexibility ------*/
+@media(max-width: 700px){
+    .other{
+        flex-direction: column;
+    }
+
+}
+/*----- Akoy tinapos na ------*/
